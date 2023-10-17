@@ -245,7 +245,7 @@ struct ActivationContainer{
 /// let d: Vec<f64> = nn.calc(&[1.02]).to_vec();
 /// ```
 ///
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Clone)]
 pub struct FeedForward {
     layers: Vec<Layer>,
     learn_rate: f64,
